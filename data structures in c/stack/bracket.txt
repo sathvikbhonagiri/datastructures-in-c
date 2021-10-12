@@ -1,0 +1,25 @@
+#include"stack function.h"
+#include<stdio.h>
+void main()
+{ int c,i=0;
+  s.top=-1;
+  char exp[20];
+ printf("enter exp\n");
+ gets(exp);
+ while(exp[i]!='\0')
+ {if(exp[i]=='['||exp[i]=='{'||exp[i]=='(')
+  push(&s,exp[i]);
+ else 
+  {if(exp[i]==']'||exp[i]=='}'||exp[i]==')')
+    { if(isempty(s))
+     {printf("invalid brackets");}
+      else
+     c=pop(&s);}}
+  }
+if(isempty(s))
+     printf("no error\n");
+else
+ printf("error");
+}
+ 
+ 
