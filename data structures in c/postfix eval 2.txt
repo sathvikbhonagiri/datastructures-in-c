@@ -1,0 +1,52 @@
+int stack[10];
+int top=-1;
+int push(int c) {
+	stack[++top]=c;
+	return 0;
+}//push
+char pop()
+{
+	return (stack[top--]);
+}//pop
+
+int isOperator(char ch)
+{
+if(ch == '+' || ch == '-' || ch == '*' ||  ch == '/')  
+	return 1;
+else
+return 0;
+}
+int calc(int a,int b,char op)
+{
+switch(op)
+{
+case '*' : return a * b;
+case '/' : return a/b;
+case '+' : return a + b;
+case '-' : return a - b;
+}
+return 0;
+}
+
+void main()
+{
+char postfix[20],ch;
+int i,oprd1,oprd2,res;
+printf("\n Enter postfix expression :");
+gets(postfix);
+i = 0;
+while(postfix[i] != '\0')
+{
+ch = postfix[i++];
+if(isOperator(ch))
+{
+oprd1 = pop();
+oprd2 = pop();
+res = calc(oprd1,oprd2,ch);
+push(res);
+}
+else  push(ch-'0');
+}
+printf("\n Result :%d",res);
+getch();
+}

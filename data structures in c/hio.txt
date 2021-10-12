@@ -1,0 +1,10 @@
+stack manade sir di same functions dailone include chesadu
+
+infix to postfix sir di
+postfix eval nadhdi
+queue manade sir di same functions dailone include chesadu
+cirular queue manade sir di same functions dailone include chesadu
+single linked list nandho
+stack by link list nadhi
+queue ny linked list nadhi
+double link list nadhi

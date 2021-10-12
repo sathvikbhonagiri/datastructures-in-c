@@ -1,10 +1,9 @@
-#define max 5
+#define max 20
 #include<stdio.h>
 int*topele;
 typedef struct 
 {int top;
  int sele[max];
-    
 }stack;
 stack s;
 int isempty(stack s)
